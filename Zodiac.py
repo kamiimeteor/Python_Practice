@@ -42,4 +42,9 @@ print(list(map(lambda x:x*2+10,foo)))    #遍历foo 每个元素乘2+10 再输�
 
 '''
 
-
+#列表的定义
+a_list = ['abc', 'xyz']
+a_list.append('X')  #列表中增加元素
+print(a_list)
+a_list.remove('xyz')
+print(a_list)  #列表中删除元素
