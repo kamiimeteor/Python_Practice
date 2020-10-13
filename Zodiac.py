@@ -11,10 +11,13 @@ zodiac_days = ((1, 20), (2, 19), (3, 21), (4, 21), (5, 21), (6, 22), (7, 23), (8
 # filter功能
 zodiac_day = filter(lambda x: x <= (month, day), zodiac_days)
 # print(zodiac_day) - <filter object at 0x7fa8180225e0>
-zodiac_len = len(list(zodiac_day)) % 12
-list(zodiac_day)  # [(1, 20)]
-print(len(list(zodiac_day)))  # 0???
-print(zodiac_len)  # 1
+zodiac_list = list(zodiac_day)
+print(zodiac_list)
+print(len(zodiac_list))
+zodiac_len = len(zodiac_list) % 12
+# print(list(zodiac_day))  # [(1, 20)]
+# print(len(list(zodiac_day)))  # 0???
+# print(zodiac_len)  # 1
 print(zodiac_name[zodiac_len])
 
 '''
